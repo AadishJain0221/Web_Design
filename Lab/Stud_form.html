@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Information</title>
+</head>
+
+<style>
+    table,th,td {
+        /* border: 2px solid lightslategray;
+        border-collapse: collapse; */
+        margin: 8px;
+        padding: 5px;
+        table-layout: fixed;
+    }
+
+    input {
+        border: none;
+        border-bottom: 2px solid gray;
+        border-left: 2px solid gray;
+    }
+
+    select {
+        border-radius: 5px;
+    }
+
+    button {
+        border-radius: 5px;
+        background-color: rgb(67, 255, 46);
+    }
+</style>
+
+<body>
+    <center>
+        <h1>Student Information Form </h1>
+    </center>
+    <hr width="60%" align="center">
+    <hr width="50%" align="center">
+    <h2>General Information :-</h2>
+
+    <form>
+        <table>
+            <tr>
+                <td style="font-size: 20px;"><label for="Student name"> <b>Student's Name:</b> </label></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Enter First Name" required></td>
+                <td><input type="text" placeholder="Enter Middle Name"></td>
+                <td><input type="text" placeholder="Enter Last Name" required></td>
+            </tr>
+        </table>
+
+        <table >
+            <tr>
+                <td style="font-size: 20px;"><label for="Student Mail"> <b>Email address :</b> </label></td>
+                <td style="font-size: 20px;"><label for="Student Phone"> <b>Phone no. :</b> </label></td>
+            <tr>
+                <td><input type="email" placeholder="Enter Mail"></td>
+                <td><input type="tel" placeholder="Enter Phone" required></td>
+            </tr>
+            <tr style="font-size:12px;">
+                <td>Please enter a valid mail address </td>
+                <td>Please enter a valid phone number </td>
+            </tr>
+            </tr>
+
+            <table >
+                <tr>
+                    <td style="font-size: 20px;"><label for="Student Birth Date"> <b>Birth Date:</b> </label></td>
+                </tr>
+                <tr>
+                    <td style="border-radius: 5px;">
+                        <input type="date" id="Student Birth Date">
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td style="font-size: 20px;"><label for="Student Gender"> <b>Gender:</b> </label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="Student Gender">
+                            <option>-Select Gender-</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Not to say</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </table>
+        <br>
+        <hr width="60%" align="center">
+        <hr width="50%" align="center">
+
+        <h2>Academic Information :-</h2>
+        <table>
+            <tr>
+                <td style="font-size: 20px;"><label for="Student Enrollment"> <b>Student's Enrollment :</b> </label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="Student Enrollment" placeholder="Enter Enrollment Number"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td style="font-size: 20px;"><label for="Student Department"> <b>Student's Department :</b> </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="aset" type="radio" value="ASET">
+                    <lable for="aset">ASET</lable><br>
+                    <input id="abs" type="radio" value="ABS">
+                    <lable for="abs">ABS</lable><br>
+                    <input id="aibas" type="radio" value="AIBAS">
+                    <lable for="aibas">AIBAS</lable><br>
+                    <input id="asco" type="radio" value="ASCO">
+                    <lable for="asco">ASCO</lable><br>
+                    <input id="asap" type="radio" value="ASAP">
+                    <lable for="asap">ASAP</lable><br>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td style="font-size: 20px;"><label for="Student Course"> <b>Student's Course :</b> </label></td>
+                <td style="font-size: 20px;"><label for="Student Batch"> <b>Student's Batch :</b> </label></td>
+                <td style="font-size: 20px;"><label for="Student Semester"> <b>Student's Semester :</b> </label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="Student Course" placeholder="Enter Course"></td>
+                <td><input type="text" id="Student Batch" placeholder="Enter Batch"></td>
+                <td>
+                    <input list="sem" id="Student Semester" placeholder="Select Semester">
+                    <datalist id="sem">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                    </datalist>
+                </td>
+            </tr>
+        </table>
+        <hr width="60%" align="center">
+        <hr width="50%" align="center">
+
+        <h2>Residence Information :-</h2>
+        <table>
+            <tr>
+                <td style="font-size: 20px;"><label for="Address"> <b>Current Address :</b> </label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="Address" style="width: 500px;height: 30px;"></td>
+            </tr>
+            <tr style="font-size:15px;">
+                <td>Street Address </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="Address" style="width: 500px;height: 30px;"></td>
+            </tr>
+            <tr style="font-size:15px;">
+                <td>Street Address 2 </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="Address" style="width: 500px;height: 30px;"></td>
+                <td><input type="text" id="Address" style="width: 500px;height: 30px;"></td>
+            </tr>
+            <tr>
+                <td>City </td>
+                <td>State/Province </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="Address" style="width: 500px;height: 30px;"></td>
+            </tr>
+            <tr style="font-size:15px;">
+                <td>Postal/ZIP/PIN code </td>
+            </tr>
+            </table>
+            <hr width="50%" align="center">
+            <table>
+            <tr>
+                <td style="font-size: 20px;"><label for="Address"> <b>Parent/Guardian Address :</b> </label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="Address" style="width: 500px;height: 30px;"></td>
+            </tr>
+            <tr style="font-size:15px;">
+                <td>Street Address </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="Address" style="width: 500px;height: 30px;"></td>
+            </tr>
+            <tr style="font-size:15px;">
+                <td>Street Address 2 </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="Address" style="width: 500px;height: 30px;"></td>
+                <td><input type="text" id="Address" style="width: 500px;height: 30px;"></td>
+            </tr>
+            <tr>
+                <td>City </td>
+                <td>State/Province </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="Address" style="width: 500px;height: 30px;"></td>
+            </tr>
+            <tr style="font-size:15px;">
+                <td>Postal/ZIP/PIN code </td>
+            </tr>
+        </table>
+        <hr width="60%" align="center">
+        <hr width="50%" align="center">
+        
+        <!-- <h2>Emergency Contact Information :-</h2>
+        <table>
+            <tr>
+                <td style="font-size: 20px;"><label for="contact name1"><b>Contact Name :</b> </label></td>
+                <td style="font-size: 20px;"><label for="ph1"><b>Phone No. :</b></label></td>
+            </tr>
+            <tr>
+
+            </tr>
+        </table> -->
+        <br><center><button onclick="alert('Form Submitted')" >Submit</button></center>
+    </form>
+</body>
+
+</html>

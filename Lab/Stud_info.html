@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Info</title>
+</head>
+<style>
+    body
+    {
+
+    }
+    label
+    {
+
+    }
+    input[type ="text"], select
+    {
+        width: 40%;
+        padding :10 px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 5 px;
+    }
+    button
+    {
+        background-color: aquamarine;
+        padding: 10px;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <center><h1>Student Information</h1></center>
+    <form action="#" method="post">
+        <lable for="StName">Name of Student :</lable>
+        <input type="text" name="Student Name" required><br>
+        <lable for="Rno"> Roll No. :</lable>
+        <input type="text" name="Student Roll No." required><br>
+        <lable for="Course"> Course :</lable>
+        <select id="Course" name="Course">
+            <option value="Select" disabled selected>-Select Course-</option>
+            <option value="Engg.">Engineering</option>
+            <option value="Medical">Medical Science</option>
+            <option value="Management">Management</option>
+        </select><br>
+        <lable for="Branch"> Branch :</lable>
+        <input type="text" name="Student Branch" required><br>
+        <lable for="Contact"> Contact :</lable>
+        <input type="text" name="Student Contact" required><br>
+        <lable for="Blood grp"> Blood Group :</lable>
+        <select id="Blood grp" name ="Blood Group">
+            <option>-Select Blood Group-</option>
+            <option>+A</option>
+            <option>-A</option>
+            <option>+B</option>
+            <option>-B</option>
+            <option>+O</option>
+            <option>-O</option>
+            <option>+AB</option>
+        </select><br>
+        <input type="checkbox" id="sing"name="Hobby"value="Singing">
+        <lable for="Singing">Singing</lable>
+        <input type="checkbox" id="dance"name="Hobby"value="Dancing">
+        <lable for="Dancing">Dancing</lable>
+        <br>
+        <label for="birthday">DOB</label>
+        <input type="date"id="birthday"name="birthday">
+        <br>
+        <button>Submit</button>
+    </form>
+    <br>
+</body>
+</html>
